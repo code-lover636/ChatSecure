@@ -1,0 +1,83 @@
+@import './global.scss';
+
+.navbar {
+    background-color: #000000;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 2em;
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: $primary-color;
+      background-color: transparent;
+      border: 2px solid $primary-color;
+      border-radius: 50%;
+      height: 70px;
+      width: 70px;
+      margin-bottom: 2rem;
+      pointer-events: none;
+    }
+  
+    &__logo-icon {
+      color: $primary-color;
+      font-weight: 800;
+      font-size: 3rem;
+    }
+  
+    &__links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3em;
+      justify-content: space-between;
+      cursor: pointer;
+      &-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        &:hover{
+            a{color: $primary-color;}
+            transition: transform 0.2s ease-in-out;
+            transform: translateY(-5px);
+        }
+        & a {
+          color: #ffffff;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+  
+          & .navbar__links-icon {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  
+    &__logout {
+      text-align: center;
+  
+      &-button {
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+  
+        & .navbar__logout-icon {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  

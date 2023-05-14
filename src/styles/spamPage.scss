@@ -1,0 +1,110 @@
+@import './global.scss';
+
+.spam-page {
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 1em 1em 1em 0em;
+}
+
+.spam-screen{
+    width: 100%;
+    height: 100%;
+    background-color:  #131313;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 2em 0em;
+    &::-webkit-scrollbar{
+        display: none;
+    };
+    .spam-classifier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+      
+        .background-image {
+          // background-image: url('lofi-image.jpg');
+          background-size: cover;
+          background-position: center;
+          opacity: 0.5;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+        }
+      
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          z-index: 1;
+          width: 100%;
+          padding: 0 7em;
+      
+          .heading {
+            font-size: 3rem;
+            text-align: center;
+            color: $primary-color;
+            padding-bottom: .7em;
+          }
+          p{
+            color: rgba(255, 255, 255, 0.527);
+          }
+          .text-area {
+            width: 100%;
+            background-color: transparent;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+      
+            .input-area {
+              width: 100%;
+              height: 200px;
+              background-color: white;
+              padding: 20px;
+              border-radius: 10px;
+              color: #000000;
+              border: none;
+              outline: none;
+              resize: none;
+              font-size: 1rem;
+            }
+            .predict-button {
+                background-color: transparent;
+                border: 2px solid $primary-color; /* Green border color */
+                color: $primary-color; /* Green text color */
+                font-size: 1rem;
+                font-weight: 700;
+                padding: .3em 2.5em;
+                float: right;
+                margin-top: 1.2em;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s;
+        
+                &:hover {
+                  background-color: $primary-color; /* Green background on hover */
+                  color: #ffffff; /* White text color on hover */
+                }
+            }
+          }
+          .subtitle {
+            margin-top: 1.5em;
+            font-size: 2rem;
+            font-weight: 700;
+            color: rgb(202, 0, 0);
+            text-transform: uppercase;
+          }
+        }
+      }
+      
+}

@@ -25,8 +25,8 @@ def preprocess_text(text):
 
 
 # Load the saved model
-vectorizer = joblib.load('count_vectorizer.pkl')
-model = joblib.load('model.pkl')
+vectorizer = joblib.load('./count_vectorizer.pkl')
+model = joblib.load('./model.pkl')
 
 
 def classify_text(text):

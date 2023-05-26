@@ -6,6 +6,7 @@ from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
 
 nltk.download('stopwords')
+nltk.download('punkt')
 
 
 # Preprocessing steps

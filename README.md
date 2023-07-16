@@ -1,5 +1,6 @@
 # ChatSecure
-Devjam hackathon project. Spam classifier
+Devjam hackathon project. Spam classifier. <br>
+See hosted [website](https://chatsecure.netlify.app/).
 
 # Spam Classifier Web Application
 
